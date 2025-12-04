@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 660px;  /* Give the container a fixed width */
+            height: 660px; /* Give it a height so squares stretch vertically */
+            border: 2px solid black; /* So you can see the boundary */
+            margin: 0 auto; /* Optional: Centers the grid */
+        }
+        .grid-square {
+            box-sizing: border-box;
+            background-color: white; /* Or any color */
+            border: 1px solid #ccc;  /* Adds a border so you can see individual squares */
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <label for="name">Insert Grid Size per side</label>
+
+    <input
+        type="text"
+        id="gridSizeInput"
+        name="gridSizeInput"/>
+
+    <button id="submitButton">Submit</button>
+    <script src = "script.js"></script>
+</body>
+</html>
